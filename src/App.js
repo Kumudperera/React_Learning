@@ -7,6 +7,7 @@ function App() {
       <Todo text='Hello World!' />
       <Todo text='Hello React!' />
       <Todo text='Hello JavaScript!' />
+      
     </div>
   );
 }
