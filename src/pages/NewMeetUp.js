@@ -1,5 +1,5 @@
 function NewMeetUpPage() {
-    return <div>New Ups Page</div>;
+    return <div>New MeetUp Page</div>;
 }
 
 
