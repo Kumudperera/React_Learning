@@ -3,13 +3,15 @@ import { Route, Switch } from "react-router-dom";
 import AllMeetUpsPage from "./pages/AllMeetUps";
 import FavoritesPage from "./pages/Favorites";
 import NewMeetUpPage from "./pages/NewMeetUp";
-import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/layout/Layout";
 
 function App() {
   return (
-    <div>
-      <MainNavigation />
+    <Layout>
+      {/* By Switch component, we tell a react Router that only one route should be active */}
       <Switch>
+        {/* By Switch component, checks the url path and first one render it but not checks others. 
+        Then use exact prop for the first */}
       <Route path="/" exact>
         <AllMeetUpsPage />
       </Route>
@@ -22,7 +24,7 @@ function App() {
         <FavoritesPage />
       </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 }
 
